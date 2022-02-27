@@ -14,13 +14,13 @@ con.connect(function (err) {
   console.log("Connected!");
 });
 
-// const server = http.createServer((req, res) => {
-//   const headers = {
-//     "Access-Control-Allow-Origin": "*",
-//     "Access-Control-Allow-Methods": "OPTIONS, POST, GET",
-//     "Access-Control-Max-Age": 2592000, // 30 days
-//     /** add other headers as per requirement */
-//   };
+const server = http.createServer((req, res) => {
+  const headers = {
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "OPTIONS, POST, GET",
+    "Access-Control-Max-Age": 2592000, // 30 days
+    /** add other headers as per requirement */
+  };
 
   console.log("Hello server");
 
@@ -70,5 +70,5 @@ con.connect(function (err) {
   }
 });
 
-// server.listen(8000);
-// console.log("listening on 8000");
+server.listen(8000);
+console.log("listening on 8000");
