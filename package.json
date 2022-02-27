@@ -1,0 +1,19 @@
+{
+  "name": "srs-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cros": "^1.0.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3-rc.0",
+    "nodemon": "^2.0.14"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
